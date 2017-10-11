@@ -1,0 +1,43 @@
+<div class="srch-card">
+  <input #srchV type="text" class="search-panel" placeholder="e.g. W6, London"/> 
+  | Country
+  <select #countr id="sel-country" required>
+    <option *ngFor="let country of _countries">{{country}}</option>
+  </select>
+  | Rent / Sale
+  <select #rentS id="sel-rent-sale" required>
+    <option *ngFor="let w of what">{{w}}</option>
+  </select>
+  | Bathrooms
+  <select #bath id="sel-bath-sale" required>
+    <option *ngFor="let n of nums">{{n}}</option>
+  </select>
+  | Beds
+  <select #bed id="sel-beds-sale" required>
+    <option *ngFor="let n of nums">{{n}}</option>
+  </select>
+  | Prices
+  <input #minP class="input-price" type="text" placeholder="Minimum" size="10" required>-
+  <input #maxP class="input-price" type="text" placeholder="Maximum" size="10" required> |
+  <button class="search-button" 
+  (click)="submitData(srchV, countr, rentS, bath, bed, minP, maxP)">Search</button>
+  <button class="search-button" 
+  (click)="loadFavorite()">Favorite</button>
+</div>
+
+<div class="container">
+  <div *ngFor="let house of houses" class="element-container">
+    <div class="element-img">
+      <img class="avatar" [src]="house.img_url"/>
+    </div>
+    <div class="element-description" >
+      <h2 class="price-box">{{house.price_formatted}}</h2>
+      <h2>{{house.title}}</h2>
+      <h3>{{house.keywords}}</h3>
+      <p>{{house.summary}}</p>
+      <button routerLink="/about" (click)="openMore(house)" class="btn">Learn More</button>
+      <div (click)="setFavorite(house)" *ngIf="house.favorite" id="heart-red"></div>
+      <div (click)="setFavorite(house)" *ngIf="!house.favorite" id="heart-gray"></div>
+    </div>
+  </div>         
+</div>

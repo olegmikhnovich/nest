@@ -1,0 +1,203 @@
+.srch-card {
+    background: #fdf1d0;
+    margin: -1em auto;
+    padding: 2em;
+    width: auto;
+    border-radius: 10px;
+    opacity: 0.9;
+    font-size: 18px;
+}
+
+.search-panel {
+    width: 100%;
+    padding: 10px 40px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    background-image: url("https://png.icons8.com/search/androidL/24"); 
+    background-position: 5px 5px; 
+    background-repeat: no-repeat;
+}
+
+.container {
+    margin: 3em auto;
+    padding: 1em;
+    opacity: 0.9;
+    background: #fdf1d0;
+    width: 60vw;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.nothing-notify {
+    text-align: center;
+    font-size: 42px;
+    color: white;
+    margin: 4em;
+}
+
+.input-price {
+    height: 25px;
+    font-size: 12px;
+}
+
+select {
+    padding: 10px 20px;
+    height: 35px;
+    border: none;
+    background-color: #da6e10;
+    font-size: 12px;
+    color: white;
+}
+
+.search-button {
+    background-color: white;
+    color: black;
+    border: 2px solid #da6e10;
+    padding: 10px 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    float: right;
+}
+
+.search-button:hover {
+    background-color: #da6e10;
+    color: white;
+}
+
+.element-container {
+    height: 270px;
+    margin-bottom: .5em;
+}
+
+.element-img {
+    float: left;
+    width: 20%;
+}
+
+.element-description {
+    float: right;
+    width: 63%;
+    height: 100%;
+    padding-left: 1em;
+    background: white;
+}
+
+.avatar{
+    height: 270px;
+    width: 180%;
+    object-fit: cover;
+}
+
+.price-box {
+    float: right;
+    padding-right: .5em;
+}
+
+.btn {
+    float: right;
+    margin-right: 2em;
+    background-color: white;
+    color: black;
+    border: 2px solid #da6e10;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    float: right;
+    margin-right: 2em;
+    background-color: #da6e10;
+    color: white;
+    border: 2px solid #da6e10;
+    padding: 15px 25px;
+    cursor: pointer;
+}
+
+
+#heart-red {
+    position: relative;
+    width: 50px;
+    height: 45px;
+    cursor: pointer;
+    margin-left: .3em;
+}
+
+#heart-red:before,
+#heart-red:after {
+    position: absolute;
+    content: "";
+    left: 25px;
+    top: 0;
+    width: 25px;
+    height: 40px;
+    background: red;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 25px 25px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart-red:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
+
+#heart-gray{
+    position: relative;
+    width: 50px;
+    height: 45px;
+    cursor: pointer;
+    margin-left: .3em;
+}
+
+#heart-gray:before,
+#heart-gray:after {
+    position: absolute;
+    content: "";
+    left: 25px;
+    top: 0;
+    width: 25px;
+    height: 40px;
+    background: gray;
+    -moz-border-radius: 5px 5px 0 0;
+    border-radius: 25px 25px 0 0;
+    -webkit-transform: rotate(-45deg);
+       -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+         -o-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    -webkit-transform-origin: 0 100%;
+       -moz-transform-origin: 0 100%;
+        -ms-transform-origin: 0 100%;
+         -o-transform-origin: 0 100%;
+            transform-origin: 0 100%;
+}
+#heart-gray:after {
+    left: 0;
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+         -o-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 100% 100%;
+       -moz-transform-origin: 100% 100%;
+        -ms-transform-origin: 100% 100%;
+         -o-transform-origin: 100% 100%;
+            transform-origin :100% 100%;
+}
